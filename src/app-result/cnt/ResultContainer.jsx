@@ -1,0 +1,2 @@
+import React from 'react';import {Button} from 'primereact/button';
+export default function ResultContainer({winner,onNext,final}){return <section className="result-screen"><span className="eyebrow">KARAR VERİLDİ</span><i className="pi pi-check-circle result-icon"/><h2>{final?'Rota Oluştu!':`${winner.name} seçildi.`}</h2><p>{final?'Tüm kategori seçimleri tamamlandı. Rota arkadaş grubunuz için hazır.':`Bu kategori için grubun seçimi: ${winner.name}`}</p>{!final&&<Button label="Sonraki Kategori" icon="pi pi-arrow-right" iconPos="right" onClick={onNext}/>}</section>}

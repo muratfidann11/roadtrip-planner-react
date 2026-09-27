@@ -1,0 +1,1 @@
+export const RESULT_LABEL='ROTA TAMAMLANDI';

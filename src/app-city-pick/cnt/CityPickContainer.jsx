@@ -1,0 +1,2 @@
+import React from 'react';import {Card} from 'primereact/card';
+export default function CityPickContainer({onPick}){return <section className="page"><div className="page-head"><span className="eyebrow">02 / ŞEHİR</span><h2>Nereye gidiyoruz?</h2><p>Rotanın ana şehrini seçin.</p></div><div className="city-grid">{['Bolu','Ankara'].map(c=><Card key={c} className="city-card" onClick={()=>onPick(c)}><div className={`city-image ${c.toLowerCase()}`}/><div className="city-copy"><span>KEŞFET</span><h3>{c}</h3><i className="pi pi-arrow-right"/></div></Card>)}</div></section>}
